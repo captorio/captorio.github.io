@@ -25,10 +25,40 @@
 
     <section class="main-content">
       
-      <h2>Install captor root certificate to device</h2>
+      <h2>Install Captor root certificate to device</h2>
 <!--<p class="meta">13 Feb 2016</p> -->
 
-<p>To be continue</p>
+<hr>
+
+<p>Captor relies on a &quot;man-in-the-middle&quot; approach to HTTPS interception. Captor generates its own certificates for sites, which it signs using a Captor Root Certificate. You will see a warning in your browser,  or other application, because the Captor Root Certificate is not in your list of trusted root certificates. </p>
+
+<p>You can choose to permanently trust each site&#39;s certificate, in which case you do not need to trust the Captor Root Certificate. If you would like to automatically trust every certificate issued by Captor, install Catpor Root Certificate to your system. The guide will help you do this.</p>
+
+<blockquote>
+<p>If you install the Catpor Root Certificate following the guide, but still see a warning in your browser or device, please check your system date and time that run Captor, ensure the time is not greater than your deivce time, and in Captor go to <code>Preferences</code> menu click <code>clean</code> to clean certificate cache.</p>
+</blockquote>
+
+<h3>Mac OS</h3>
+
+<p>In Catpor go to the <code>Preferences</code> menu and click <code>&quot;on this Mac...&quot;</code> button. You will then be prompted to install the certificate to system.</p>
+
+<h3>iOS Devices</h3>
+
+<p>First set your iOS device to use Captor as its HTTP proxy in the Settings app &gt; Wifi settings. Then open Safari and browse to <code>http://127.0.0.1:8080/cert</code>. Safari will prompt you to install the SSL certificate.</p>
+
+<h3>Android Devices</h3>
+
+<p>First set your Android device to use Captor as its HTTP proxy in the Settings &gt; WLAN settings. Then open Chrome and browse to <code>http://127.0.0.1:8080/cert</code>, save the certificate, then touch the certificate that will prompt you to install the SSL certificate.</p>
+
+<h3>Windows</h3>
+
+<p>First set your windows to use Captor as its HTTP proxy in the Settings app &gt; Wifi settings. Then open IE and browse to <code>http://127.0.0.1:8080/cert</code>, save the root certificate to any locate, then double click to open  certificate. A window will appear warning you that the CA Root certificate is not trusted.</p>
+
+<p>Click the &quot;Install Certificate&quot; button to launch the Certificate Import Wizard. The certificate must be imported into the &quot;Trusted Root Certification Authorities&quot; certificate store, so override the automatic certificate store selection.</p>
+
+<h3>Firefox</h3>
+
+<p>First set your Firefox to use Captor as its HTTP proxy in the Preferences &gt; Advanced &gt; Network. Then browse to <code>http://127.0.0.1:8080/cert</code>. Firefox will prompt you to install the certificate, enable all checkboxes in dialog to trust the certificate and click OK.</p>
 
 
       <footer class="site-footer">
