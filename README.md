@@ -1,59 +1,23 @@
-# Jekyll Cayman theme
+# Captor
 
-This is a [Jekyll][1] theme for [@jasonlong][2]'s [Cayman theme][4] on [GitHub Pages][3].
+Captor is an HTTP protocol analyzer. It capture and decode HTTP and HTTPS traffic, make it simple for developers to debug.
 
-Cayman is a clean, responsive theme for [GitHub Pages](https://pages.github.com). This theme is available as an option if you use the [Automatic Page Generator](https://help.github.com/articles/creating-pages-with-the-automatic-generator/) or you can copy the template and styles to use on your own.
+![Captor Screenshot](./img/main.png) 
 
-You can preview the theme at http://jasonlong.github.io/cayman-theme or with real content at http://jasonlong.github.io/geo_pattern.
+### How to work
+Captor captures HTTP/HTTPS traffic between chosen devices  and the Internet, It allows you to analyze incoming and outgoing data to monitor requests and responses before they hit the browser.
 
-![](http://cl.ly/image/1T3r3d18311V/content)
+### Key features
 
-# How to use it?
+* HTTPS traffic analyse (Needs to install captor certificate to decrypt HTTPS traffic, [**Install Guide**](/installguide))
+2. RESTful debugging, view JSON and XML request and response in tree view or text view
+3. Filtering Support for session list
+4. Capturing traffic on any platform (iOS, MacOS, Android, Windows etc.)
+5. Optimization for OS X，native and easy to use
+6. Support HTTP1.0 and HTTP1.1
 
-Download the theme @ http://github.com/pietromenna/jekyll-cayman-theme/archive/master.zip
+### Documents
+* [Install Captor root certificate to device](/installguide)
 
-Unzip it and use it as a regular jekyll folder.
-
-```
-$ unzip master.zip
-```
-
-Get inside the newly extracted folder
-```
-$ cd jekyll-cayman-theme
-```
-
-Get the required gems
-```
-$ bundle install
-```
-
-Use it!
-
-```
-$ jekyll serve
-```
-
-For more details read about [Jekyll][1] on its web page.
-
-# Setup
-
-Some important configuration can be done in the file `_config.yml`. Please, check the Setup section in that file.
-
-
-## baseurl
-
-`baseurl` parameter is required in the case the site doesn't sit on the root of the domain. For example: http://pietromenna.github.io/jekyll-cayman-theme
-
-In the case above the baseurl should be set to "/jekyll-cayman-theme".
-
-In the case the site sits in the root, you can leave `baseurl` as empty "".
-
-# License
-
-This work is licensed under a [Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by/4.0/) license.
-
-[1]: http://jekyllrb.com/
-[2]: https://github.com/jasonlong
-[3]: http://pages.github.com/
-[4]: https://github.com/jasonlong/cayman-theme
+### Support or Contact
+Any questions, contact us <captorio.help@gmail.com> and we’ll help you sort it out.
