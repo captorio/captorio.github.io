@@ -31,7 +31,7 @@
 <hr>
 
 <blockquote>
-<p>Only need to install Catpor Root Certificate on the client device.</p>
+<p>Only need to install Catpor Root Certificate on the client device. (The client device is the source of the HTTP traffic that Captor monitors)</p>
 </blockquote>
 
 <p>Captor relies on a &quot;man-in-the-middle&quot; approach to HTTPS interception. Captor generates its own certificates for sites, which it signs using a Captor Root Certificate. You will see a warning in your browser, or other application, because the Captor Root Certificate is not in your list of trusted root certificates. </p>
@@ -44,7 +44,15 @@
 
 <h3>Mac OS</h3>
 
-<p>In Catpor go to the <code>Preferences</code> menu and click <code>&quot;on this Mac...&quot;</code> button. You will then be prompted to install the certificate to system.</p>
+<p>First set your Mac to use Captor as its HTTP proxy in the Network &gt; Wi-Fi &gt; Advanced &gt; Proxies &gt; Web Proxy/Secure Web Proxy. Then browse to <code>http://127.0.0.1:8080/cert</code>, save the root certificate to any location.</p>
+
+<p>Drag the certificate file onto the Keychain Access icon or double-click the certificate file.</p>
+
+<p>Select the <code>captor CA</code> certificate, and then choose File &gt; Get Info.</p>
+
+<p>Click the Trust Settings disclosure triangle to display the trust policies for the certificate.</p>
+
+<p>set trust settings to <code>Always Trust</code>, and then close the windows, If you’re asked to provide a name and password, type the name and password for an administrator user on this computer.</p>
 
 <h3>iOS Devices</h3>
 
