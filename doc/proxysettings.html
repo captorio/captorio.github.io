@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+  <head>
+  <meta charset="UTF-8">
+  <title>Captor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#157878">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/cayman.css">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77098723-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</head>
+
+  <body>
+    <section class="page-header">
+  <a class="normal" href="/">
+	  <h1 class="project-name">Captor</h1>
+  </a>
+  <h2 class="project-tagline">Captor is an HTTP protocol analyzer for Mac</h2>
+ <!--  <a href="#" class="btn">View on GitHub</a> -->
+  <a target="_blank" href="http://appstore.com/mac/captor">
+  	<img src="/img/macappstore.svg"/>
+  </a>
+  <!--
+   <a href="#" class="btn">App Store</a> -->
+</section>
+
+    <section class="main-content">
+      
+      <h2>System & Browser Configuration</h2>
+<!--<p class="meta">13 Feb 2016</p> -->
+
+<hr>
+
+<p>In order for any application (or any browser) to use Captor it must be configured to use Captor as its proxy server. </p>
+
+<p>When Captor is running, Captor toolbar shows both the listening IP addresses and port, like this:</p>
+<div class="highlight"><pre><code class="language-" data-lang="">Listening on 10.0.0.10:8080
+</code></pre></div>
+<blockquote>
+<p>Remember to disable the HTTP Proxy in your Settings when you stop using Captor, otherwise you&#39;ll get confusing network failures in your applications!</p>
+</blockquote>
+
+<h3>Mac OS X</h3>
+
+<ol>
+<li>Click the <code>Apple Menu</code>.</li>
+<li>Click <code>System Preferences</code>.</li>
+<li>Click the <code>Network</code> icon.</li>
+<li>Click the <code>Advanced</code> button.</li>
+<li>Click the <code>Proxies</code> tab.</li>
+<li>Enable the Web Proxy (HTTP) and Secure Web Proxy (HTTPS) options to point to the Captor&#39;s IP address <code>10.0.0.10</code> (or <code>127.0.0.1</code> - same matchine as where the Captor is running), using port <code>8080</code> (default).</li>
+</ol>
+
+<h3>iOS Devices</h3>
+
+<ol>
+<li>Tap <code>Settings</code> &gt; <code>Wi-Fi</code>.</li>
+<li>Tap the <code>settings</code> (Information icon) for the Wi-Fi network.</li>
+<li>Tap the <code>Manual</code> option in the HTTP Proxy section.</li>
+<li>In the <code>Server</code> field, type the IP address of your Mac running Captor (example 10.0.0.10).</li>
+<li>In the <code>Port</code> field, type the port Captor is running (usually 8080).</li>
+<li>Leave Authentication set to Off.</li>
+</ol>
+
+<h3>Android Devices</h3>
+
+<ol>
+<li>Swipe down from the top of the screen and tap the <code>Settings</code> icon.</li>
+<li>Tap <code>Wi-Fi</code>.</li>
+<li>Tap and hold your current Wi-Fi network. Select <code>Modify Network</code>.</li>
+<li>Tap to expand <code>advanced options</code>.</li>
+<li>Tap the Proxy settings dropdown and select <code>Manual</code>.</li>
+<li>Type the IP address (example 10.0.0.10) and port (usually 8080) of your Mac running Captor.</li>
+<li>Tap Save.</li>
+</ol>
+
+<h3>Windows</h3>
+
+<ol>
+<li>Open <code>Internet Explorer</code>.</li>
+<li>Select <code>Tools</code> from the menu bar of your Internet Explorer windows.</li>
+<li>Select <code>Internet Options</code></li>
+<li>Select the <code>Connections</code> Tab, and Click the <code>LAN Settings</code> button.</li>
+<li>Enable the <code>Use a proxy server ...</code> checkbox under <code>Proxy Server</code>. (the Address and Port edit boxes will now turn white and be editable).</li>
+<li>Enter the IP address (example 10.0.0.10) and port (usually 8080) of your Mac running Captor in their respective edit boxes.</li>
+<li>Click on OK and OK until all the windows have closed.</li>
+</ol>
+
+<h3>Firefox</h3>
+
+<ol>
+<li>Click the Firefox menu. Hover over Options, and then select <code>Options</code> from the submenu.</li>
+<li>Open the <code>Advanced</code> category. Click on the <code>Network</code> tab.</li>
+<li>Click the <code>Settings...</code> button. This will open the Connection Settings window.</li>
+<li>Choose <code>Manual proxy configuration</code>. This will allow you to enter information in the fields below.</li>
+<li>Enter the IP address (example 10.0.0.10) and port (usually 8080) of your Mac running Captor in the <code>HTTP Proxy</code> field and <code>Port</code> field.</li>
+<li>Click on OK</li>
+</ol>
+
+
+      <footer class="site-footer">
+  <span class="site-footer-owner"><a href="">Captor</a> is maintained by <a href="">Goden</a>.</span>
+  <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/pietromenna/jekyll-cayman-theme">Cayman theme</a> by <a href="http://github.com/jasonlong">Jason Long</a>.</span>
+</footer>
+
+
+    </section>
+
+  </body>
+</html>
